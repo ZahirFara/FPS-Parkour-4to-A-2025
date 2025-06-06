@@ -76,6 +76,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   precio: 10
+<<<<<<< HEAD
+=======
+  DineroManager: {fileID: 0}
+>>>>>>> adeea3542b19aa28b8ac0a1cd76caa4d260ac2ac
 --- !u!1001 &4889785426459631165
 PrefabInstance:
   m_ObjectHideFlags: 0
