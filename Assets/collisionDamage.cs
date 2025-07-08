@@ -2,28 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MercanciaScript : MonoBehaviour
+public class collisionDamage : MonoBehaviour
 {
-    public int precio = 10;
-    public DineroManager2 dineroManager;
+    public int damage = 10;
+    public VidaManager VidaManager;
 
     void Start()
     {
-        dineroManager = FindObjectOfType<DineroManager2>();
+        VidaManager = FindObjectOfType<VidaManager>();
     }
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (dineroManager.UpdateMoney(-precio))
+            if (VidaManager.UpdateHealth(-damage))
             {
-                Destroy(gameObject);
+               
                 Debug.Log("se pudo");
-            }     
-            else {
+            }
+            else
+            {
                 Debug.Log("no se pudo");
-                 }
+            }
         }
     }
 }
+
