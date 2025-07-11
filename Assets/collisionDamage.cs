@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class collisionDamage : MonoBehaviour
 {
-    public int damage = 10;
+    public float damage = 10;
     public VidaManager VidaManager;
 
     void Start()

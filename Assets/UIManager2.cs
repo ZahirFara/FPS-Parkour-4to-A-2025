@@ -12,18 +12,20 @@ public class UIManager2 : MonoBehaviour
     float Dinero;
     float Vida;
 
-     void Start()
+    void Start()
     {
         dineroManager = FindObjectOfType<DineroManager2>();
         vidaManager = FindObjectOfType<VidaManager>();
 
     }
 
-    private void Update()
+    public void UpdateHealthText(float points)
     {
-        Dinero = dineroManager.playerMoney;
-        Vida = vidaManager.playerVida;
-        ContadorDinero.text = "Dinero: " + Dinero.ToString(); 
-        ContadorVida.text = "Vida: " + Vida.ToString();
+        ContadorVida.text = "Vida: " + points.ToString();
+    }
+
+    public void UpdateMoneyText(float money)
+    {
+        ContadorDinero.text = "Money: " + money.ToString();
     }
 }

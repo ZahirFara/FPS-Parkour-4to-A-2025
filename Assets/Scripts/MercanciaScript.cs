@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MercanciaScript : MonoBehaviour
 {
-    public int precio = 10;
+    public float precio = 10;
     public DineroManager2 dineroManager;
 
     void Start()

@@ -2543,6 +2543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerVida: 100
+  manager: {fileID: 1715119894}
 --- !u!114 &1793469526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2556,6 +2557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMoney: 100
+  manager: {fileID: 1715119894}
 --- !u!114 &1793469527
 MonoBehaviour:
   m_ObjectHideFlags: 0
