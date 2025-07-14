@@ -18,7 +18,7 @@ public class RestartSceneOnFall : MonoBehaviour
         if (transform.position.y  < deathFall)
         {
             Debug.Log("respawn");
-            SceneManager.LoadScene("Fps ParkourWood");
+            SceneManager.LoadScene("Parkour final");
         }
     }
 }
